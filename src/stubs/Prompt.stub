@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Prompts;
+
+use SabatinoMasala\LaravelLlmPrompt\BasePrompt;
+
+class {{name}} extends BasePrompt
+{
+
+    public function __construct() {
+    }
+
+    public function getBasePrompt(): string
+    {
+        return 'Explain the pythagorean theorem as if I were a 5 year old.';
+    }
+}

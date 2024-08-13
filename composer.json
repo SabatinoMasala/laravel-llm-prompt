@@ -18,13 +18,21 @@
     }
   ],
   "require": {
-    "php": "^8.1"
+    "php": "^8.2",
+    "laravel/framework": "^11.9"
   },
   "require-dev": {
   },
   "autoload": {
     "psr-4": {
       "SabatinoMasala\\LaravelLlmPrompt\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SabatinoMasala\\LaravelLlmPrompt\\LlmPromptServiceProvider"
+      ]
     }
   },
   "config": {
