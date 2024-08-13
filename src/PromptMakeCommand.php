@@ -24,6 +24,9 @@ class PromptMakeCommand extends Command
     public function handle()
     {
         $name = $this->argument('name');
+        if (!is_dir(app_path('Prompts'))) {
+            mkdir(app_path('Prompts'));
+        }
         $path = app_path('Prompts/' . $name . '.php');
         $stub = file_get_contents(__DIR__ . '/stubs/prompt.stub');
         $stub = str_replace('{{name}}', $name, $stub);
