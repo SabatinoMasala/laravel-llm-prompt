@@ -7,11 +7,12 @@ use SabatinoMasala\LaravelLlmPrompt\BasePrompt;
 class {{name}} extends BasePrompt
 {
 
-    public function __construct() {
-    }
+    public function __construct(
+        public string $language = 'English'
+    ) {}
 
     public function getBasePrompt(): string
     {
-        return 'Explain the pythagorean theorem as if I were a 5 year old.';
+        return 'Explain the pythagorean theorem in {language} as if I were a 5 year old.';
     }
 }
