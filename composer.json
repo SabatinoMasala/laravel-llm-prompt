@@ -1,0 +1,35 @@
+
+{
+  "name": "sabatinomasala/laravel-llm-prompt",
+  "description": "LLM prompt helper for Laravel",
+  "keywords": [
+    "SabatinoMasala",
+    "artificial",
+    "intelligence",
+    "LLM"
+  ],
+  "homepage": "https://github.com/SabatinoMasala/laravel-llm-prompt",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "SabatinoMasala",
+      "email": "masalasabatino@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.1"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "SabatinoMasala\\LaravelLlmPrompt\\": "src"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
